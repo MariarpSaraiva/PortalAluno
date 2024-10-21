@@ -1,0 +1,251 @@
+/*pag login */
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: linear-gradient(90deg, #222944, #283666, #445fbf);
+    color: white;
+    text-align: center;
+}   
+
+.head{
+    margin: 35px;
+    padding: 20px;
+    font-size: 20px;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0, 10px, 0, 10px;
+}
+
+.cabeca{
+    display: flex;
+    justify-content: space-around;
+}
+.cabeca h1{
+    padding-right: 100px;
+}
+
+#corpo{
+    border: 2px solid white;
+    margin-left: 450px;
+    margin-right: 450px;
+    padding: 0, 40px, 0, 40px;
+    align-items: center;
+    background-color: #2f3e6dd4;
+    border-radius: 10px;
+    padding-bottom: 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.856);
+}
+#corpo p{
+    font-size: 19px;
+}
+#corpo hr{
+    margin: 25px;
+}
+#loginAluno{
+    padding-left: 27px;
+    padding-right:29px;
+    height: 25px;
+    font-size: 19px;
+    border-radius: 8px;
+    background-image: url(https://cdn-icons-png.flaticon.com/128/3178/3178165.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.2em;
+    padding-left: 1.7em; 
+   
+}
+
+#senhaAluno{
+    padding-left:27px;
+    padding-right: 29px;
+    font-size: 19px;
+    height: 25px;
+    border-radius: 8px;
+    background-image: url(https://cdn-icons-png.flaticon.com/128/4520/4520142.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 1.2em;
+    padding-left: 1.7em;
+}
+
+.botaoInicial{
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 17px;
+    background-color: white;
+    border-radius: 5px;
+    color: rgb(34, 34, 34);
+    text-decoration: none;
+
+}
+/*pag. contato*/
+.ctt{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+.ctt a{
+
+    display: inline;
+    padding-top: 35px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+.ctt a:hover{
+    color: #919fd1;
+    text-decoration: none;
+}
+
+.inContato h1{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.inContato a{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.inContato a:hover{
+    color: #919fd1;
+}
+
+.obs{
+   text-align: center; 
+   display: inline;
+}
+
+#nomeCompleto{
+    width: 420px;
+    font-size: 20px;    
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px black;
+
+}
+#emailCompleto{
+    width: 420px;
+    font-size: 20px;   
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px black;
+}
+hr{
+    margin: 25px 100px 25px 100px;
+}
+#telefone{
+    width: 420px;
+    font-size: 20px;   
+    border-radius: 10px; 
+    box-shadow: 4px 4px 4px black;
+}
+#obs{
+    width: 420px;
+    height: 150px;
+    font-size: 15px;    
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px black;
+}
+
+button{
+    border-radius: 5px;
+    border: 1px solid #283666;
+    color: white;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0);
+
+}
+
+.butCont{
+    font-size: 18px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.butCont:hover{
+    color: #445fbf;
+}
+
+
+.fim{
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 100px;
+    border-top: 1px solid white;
+}
+/*Pag sobre nós (mapa gMaps)*/
+.infoNh{
+    text-align: justify;
+    line-height: 23px;
+    font-size: 19px;
+    padding: 20px 200px 0;
+}
+
+.infoNh h1{
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+/*ajustando quadros */
+.pInfo{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
+.pInfo h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+.one{
+    border: 1px solid white;
+    text-align: center;
+    padding: 17px;
+    background-color: #171d34;
+    border-radius: 25px;
+    margin:20px, 10px, 20px, 10px ;
+    box-shadow: 3px 3px 3px black;
+
+}
+.h4{
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.one:hover{
+    background-color: #0a0f27;
+}
+/*ajuste maps*/
+
+.infoLoc{
+    margin: 100px 0 0 ;
+    text-align: center;
+}
+
+.infoLoc h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.infoLoc h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mapBox{
+    margin-left: 320px;
+    margin-right:450px;
+    width: 600px;
+    height: 450px;
+    background: #FFF;
+
+}
+
+.det{
+    font-size: 12px;
+}
+
+/*pag. sobre nos*/

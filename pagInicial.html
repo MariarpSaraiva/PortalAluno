@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matérias Cursadas</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2f3e6dd4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #004080;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #dddddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        button {
+            background-color: #004080;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #003060;
+        }
+
+        footer {
+            background-color: #2f3e6dd4;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Matérias Cursadas - Portal do Aluno</h1>
+    </header>
+
+    <div class="container">
+        <h2>Suas Matérias</h2>
+        <table id="subjectTable">
+            <thead>
+                <tr>
+                    <th>Matéria</th>
+                    <th>Professor</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- As matérias serão carregadas aqui -->
+            </tbody>
+        </table>
+        <button onclick="loadSubjects()">Carregar Matérias</button>
+    </div>
+
+    <footer>
+        &copy; 2024 UniNexus. Todos os direitos reservados.
+    </footer>
+
+    <script>
+        // Função para carregar as matérias
+        function loadSubjects() {
+            const subjects = [
+                { name: 'Matemática Aplicada', professor: 'Dr. João Silva', time: 'Segunda - 10:00 às 12:00' },
+                { name: 'Programação Web', professor: 'Profa. Ana Souza', time: 'Terça - 14:00 às 16:00' },
+                { name: 'Banco de Dados', professor: 'Dr. Carlos Lima', time: 'Quarta - 08:00 às 10:00' },
+                { name: 'Algoritmos e Estruturas de Dados', professor: 'Profa. Maria Santos', time: 'Quinta - 16:00 às 18:00' },
+                { name: 'Sistemas Operacionais', professor: 'Dr. Pedro Costa', time: 'Sexta - 10:00 às 12:00' }
+            ];
+
+            const tableBody = document.querySelector('#subjectTable tbody');
+            tableBody.innerHTML = ''; // Limpa a tabela antes de adicionar as matérias
+
+            subjects.forEach(subject => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${subject.name}</td>
+                    <td>${subject.professor}</td>
+                    <td>${subject.time}</td>
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+    </script>
+
+</body>
+</html>
